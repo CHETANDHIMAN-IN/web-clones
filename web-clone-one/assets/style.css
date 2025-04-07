@@ -13,17 +13,15 @@ hr{
     height: 1px;
     background-color: rgba(0, 0, 0, 0.1);
 }
-/*** top sub-header start ***/
-.top-sub-header,
-.top-sub-header ul {
-    display: flex;
-}
+/***================ top sub-header start========================= ***/
 .top-sub-header{
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 100px;
 }
-.top-sub-header ul{
+.top-sub-header ul {
+    display: flex;
     justify-content: flex-end;
 }
 /***left-top-sub-header start***/
@@ -63,11 +61,65 @@ hr{
     height: 30px;
     padding: 10px;
     margin-left: 10px;
+    transition: background-color 0.2s;
 }
 .top-sub-header ul li a i{
     color: white;
 }
+.top-sub-header ul li:hover{
+    background-color: rgb(243, 85, 37);
+}
 /***right-top-sub-header end***/
-/*** top sub-header end ***/
+/***========================= top sub-header end =========================***/
 
+/********************************************************************************************************************************************************************************/
 
+/***========================= nav-bar start ==============================***/
+.main-header nav{
+    display: flex;
+    padding: 30px 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-header .nav-menu-bar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.main-header .nav-menu-bar ul li{
+    margin-left: 55px;
+}
+.main-header .nav-menu-bar ul li a{
+    text-decoration: none;
+    color: black;
+    transition: color 0.2s;
+}
+.main-header .nav-menu-bar ul li.schedule-list{
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    padding-right: 20px;
+    background-color: black;
+}
+li.schedule-list i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    color: white;
+    background-color: rgb(243, 85, 37);
+}
+.main-header .nav-menu-bar ul li.schedule-list a {
+    color: white;
+}
+
+.main-header .nav-menu-bar ul li.home-link a{
+    color: rgb(243, 85, 37) ;
+}
+.main-header .nav-menu-bar ul li a:hover{
+    color: rgb(243, 85, 37) ;
+}
+/***=========================== nav-bar end ==============================***/
