@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+}
+body{
+    padding: 10px;
+}
+.main-container{
+    position: relative;
+}
+/* ============== header start==========  */
+header{
+    border-bottom: 1px solid #80d0c7;
+    padding: 10px 100px;
+    background-color: transparent;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+header > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* ============ logo start ==============  */
+header > div div.logo-container a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 32px;
+    font-weight: 700;
+    gap: 10px;
+    text-decoration: none;
+}   
+header > div div.logo-container a svg{
+    width: 32px;
+}
+/* ============ logo end ==============  */
+/* ============== nav bar menus start =============  */
+header > div ul.nav-bar{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+}
+header > div ul.nav-bar li a{
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+}
+
+header > div ul.nav-bar li a.home-link{
+    color: rgb(19, 84, 122);
+}
+header > div ul.nav-bar li.nav-link-svg{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+header > div ul.nav-bar li.nav-link-svg svg{
+    fill: white;
+}
+
+/* ============== nav bar menus end =============  */
+
+/* ============profile icon ================== */
+header > div div.profile-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header > div div.profile-icon a svg{
+    width: 50px ;
+    height: 50px;
+    border-radius: 100%;
+    padding: 10px;
+    color: rgb(19, 84, 122);
+    background-color: white;
+}
+/* ============profile icon ================== */
+/* ============== header end==========  */
+
+
+/* ================== section one start ================= */
+/* ================== gradient - box start ==================  */
+.gradient-box{
+    position: relative;
+    z-index: -2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 150px 0px;
+    gap: 20px ;
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+}
+.gradient-box h1{
+    font-size: 58px;
+    color: white;
+}
+.gradient-box h2{
+    font-size: 22px;
+    font-weight: 600;
+    color: #13547a;
+}
+.gradient-box .search-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 100px;
+    width: 55%;
+    background-color: white;
+}
+.gradient-box .search-container input, button{
+    flex: 1;
+    border: none;
+    font-size: 20px;
+}
+.search-container input{
+    padding: 10px 0px;
+}
+.search-container button{
+    max-width: 150px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: #80d0c7;
+    font-weight: bold;
+    color: white;
+}
+/* ================== gradient - box end =============  */
+ /* ================= solid color box start ============= */
+ /* =============== web design start ==============  */
+ .solid-color-box{
+    display: flex;
+    padding: 0px 250px;
+    gap: 30px;
+    background-color: #80d0c7;
+    border-radius: 0px 0px 100px 100px;
+ }
+ .solid-color-box > div{
+    border-radius: 20px;
+    position: relative;
+    bottom: 100px;
+ }
+ .solid-color-box .web-design{
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+ }
+ .web-design{
+    transition: transform 0.3s ease;
+ }
+ .web-design:hover{
+    transform: translateY(-5px);
+ }
+ .solid-color-box .web-design-content{
+    display: flex;
+    justify-content: center;
+ }
+ .web-design-content span{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgb(0, 176, 255);
+    color: white;
+    font-weight: bold;
+ }
+ .web-design-content p{
+    font-size: 20px;
+ }
+ .web-design-content h1{
+    font-size: 24px;
+    margin-bottom: 10px;
+ }
+ .web-design img{
+    width: 300px;
+    margin-top: 40px;
+ }
+ /* =============== web design end ==============  */
+ /* ================ finance container start ===============  */
+.finance-container{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    transition: transform 0.3s ease;
+}
+.finance-container:hover{
+    transform: translateY(-5px);
+}
+.finance-container > div{
+    margin: 30px;
+}
+.finance-container img{
+    position: absolute;
+    width: 152%;
+    object-position: -100px ;
+    opacity: 0.2;
+}
+.finance-container .finance-content{
+    display: flex;
+}
+.finance-content span{
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: rgb(0, 176, 255);
+}
+.finance-container .learn-more{
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #80d0c7;
+    color: white;
+}
+.finance-container .share-content-container{
+    display: flex;
+    align-items: center;
+}
+.share-content-container .social-icon{
+    display: flex;
+    list-style: none;
+}
+.share-content-container .share{
+    margin-right: 20px;
+    font-size: 20px;
+    color: white;
+}
+.share-content-container .social-icon li{
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    color: white;
+    background-color: #80d0c7;
+}
+.share-content-container .bookmark{
+    margin-left: auto;
+    color: white;
+}
+.content h1{
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.content p{
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+}
+
+
+  /* ================ finance container end ===============  */
+ /* ================= solid color box end ============= */
+/* ================== section one end ================= */
